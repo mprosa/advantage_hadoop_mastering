@@ -6,8 +6,8 @@
     sql: ${TABLE}.dataset_instance_id
 
   - dimension: master_digital_profile_id
-    type: number
-    sql: ${TABLE}.master_digital_profile_id
+    type: string
+    sql: cast(${TABLE}.master_digital_profile_id as string)
 
   - dimension: age_range
     type: string
