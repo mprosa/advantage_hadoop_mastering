@@ -16,13 +16,13 @@
       type: left_outer
       relationship: many_to_one
       sql_on: ${d_digital_profile_demographic.postal_cd}=${d_postal_code.postal_cd}
-      view_label: 'Digital Profiles'
+      view_label: 'Individual Profiles - Digital'
   
     - join: fa_user
       type: left_outer
       relationship: one_to_many
       sql_on: ${d_digital_profile_demographic.master_digital_profile_id}=${fa_user.master_digital_profile_id}
-      view_label: 'Digital Profiles'
+      view_label: 'Individual Profiles - Digital'
   
 #- explore: fa_user
 - explore: digital_profile_cluster_in
