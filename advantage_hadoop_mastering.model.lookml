@@ -10,7 +10,7 @@
 #- explore: d_postal_code
 
 - explore: d_digital_profile_demographic
-  label: 'Digital Profiles'
+  label: 'Individual Profiles - Digital'
   joins:
     - join: d_postal_code
       type: left_outer
